@@ -18,7 +18,6 @@ void main() {
     weight: 87.6,
   );
 
-
   setUp(() {
     _repository = PersonRepositoryMock();
     _bloc = PersonBloc(_repository);
