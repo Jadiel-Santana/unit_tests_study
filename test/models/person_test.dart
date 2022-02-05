@@ -3,6 +3,7 @@ import 'package:unity_tests_study/models/person.dart';
 
 void main() {
   final person = Person(
+    id: '0',
     name: 'Jadiel Santana',
     age: 25,
     height: 1.83,
@@ -20,6 +21,7 @@ void main() {
 
     test('Se a idade for igual a 18, então isOlder deve ser true', () {
       final person = Person(
+        id: '1',
         name: 'Jadiel Santana',
         age: 18,
         height: 1.83,
@@ -30,6 +32,7 @@ void main() {
 
     test('Se a idade for < 18, então isOlder deve ser false', () {
       final person = Person(
+        id: '2',
         name: 'Jadiel Santana',
         age: 17,
         height: 1.83,
