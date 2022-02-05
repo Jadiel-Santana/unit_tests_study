@@ -1,4 +1,4 @@
-# unit_tests_study
+# unity_tests_study
 
 A new Flutter project.
 
