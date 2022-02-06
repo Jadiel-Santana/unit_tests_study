@@ -11,7 +11,7 @@ class PersonListState extends PersonState {
 class PersonLoadingState extends PersonState {}
 
 class PersonErrorState extends PersonState {
-  final dynamic? error;
+  final dynamic error;
 
   PersonErrorState([this.error]);
 }

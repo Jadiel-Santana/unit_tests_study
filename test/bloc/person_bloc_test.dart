@@ -29,7 +29,7 @@ void main() {
     ]);
 
     _bloc.add(PersonEvent.fetch);
-    await expectLater(_bloc.state, emitsInOrder([
+    await expectLater(_bloc.stream, emitsInOrder([
       isA<PersonLoadingState>(),
       isA<PersonListState>(),
     ]));
@@ -41,7 +41,7 @@ void main() {
     _bloc.add(PersonEvent.fetch);
 
     await expectLater(
-        _bloc.state, emitsInOrder([
+        _bloc.stream, emitsInOrder([
           isA<PersonLoadingState>(),
           isA<PersonErrorState>(),
         ]));
